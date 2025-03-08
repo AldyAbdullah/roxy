@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css"/>
+    <title>Pemograman Web</title>
+  </head>
+  <body>
+    <script>
+      function openQuiz() {
+        var iframe = document.getElementById("quiz-iframe");
+        iframe.src =
+          "https://quizizz.com/join/quiz/5e645805742f05001bd2d34b/start?studentShare=true";
+        document.getElementById("quiz-frame").style.display = "block";
+      }
+    </script>
+      <!-- untuk nav logo -->
+    <nav>
+      <div class="wrapper">
+        <div class="logo">
+          <img src="img/logo trpl 1.png" alt="">
+        </div>
+        <div class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tentangkami">Tentang Kami</a></li>
+            <li><a href="#materi">Materi</a></li>
+            <li><a href="#quis">Quis</a>
+            </li>
+            <li><a href="" class="tbl-biru">Sign Up</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav end -->
+
+    <!--hero section start-->
+    <section class="hero" id="home">
+    </section>
+    <!-- hero section end -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <script>
+        function openQuiz() {
+          var iframe = document.getElementById("quiz-iframe");
+          iframe.src =
+            "https://quizizz.com/join/quiz/5e645805742f05001bd2d34b/start?studentShare=true";
+          document.getElementById("quiz-frame").style.display = "block";
+        }
+      </script>
+      
+       <!-- Konten Materi -->
+    <section id="materi">
+      <div class="tengah">
+          <div class="kolomm">
+              <p>Our Top Materi</p>
+              <h2>Materi</h2>
+              <p>Pilih materi yang ingin Anda pelajari lebih lanjut:</p>
+          </div>
+          <div class="materi-list">
+              <div class="materi-python">
+                  <img src="img/html.png" />
+                  <p class="judul">HTML</p>
+                  <a href="/materi html/materiindex.html"  class="tbl-belajar" >Belajar</a>
+              </div>
+              <div class="materi-python">
+                  <img src="img/css.png" />
+                  <p class="judul">CSS</p>
+                  <a href="/materi css/css.html"  class="tbl-belajar" >Belajar</a>
+              </div>
+              <div class="materi-python">
+                  <img src="img/javascript.png" />
+                  <p class="judul">JavaScript</p>
+                  <a href="/materi java/java.html"  class="tbl-belajar" >Belajar</a>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- konten materi end -->
+  <div class="quis-container" id="quis">
+    <h2>Quis</h2>
+    <p>
+      Uji pengetahuan Anda dengan mengikuti quis yang telah kami
+      sediakan!
+    </p>
+    <button class="tbl-quis" onclick="openQuiz()">Ikuti Quis</button>
+    <div class="quiz-frame" id="quiz-frame" style="display: none">
+      <iframe
+      src=""
+      id="quiz-iframe"
+      width="100%"
+      height="500px"
+      frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</div>
+
+</div>
+<script src="script.js"></script>
+    <footer class="footer">
+      <div class="footer-container">
+          <div class="footer-logo">
+              <img src="img/logo trpl.png" alt="TRPL" class="logo">
+              
+          </div>
+          <div class="footer-section">
+              <h3>Solusi</h3>
+              <ul>
+                  <li>Solusi Murid</li>
+                  <li>Solusi Guru</li>
+                  <li>Solusi Orang Tua</li>
+              </ul>
+          </div>
+  
+          <div class="footer-section">
+              <h3>Tentang Kami</h3>
+              <ul>
+                  <li>Elsanudin Balu<span class="available">Ketua</span></li>
+                  <li>Muh.Syawal Djampalai</li>
+                  <li>Harlan Mardjun</li>
+                  <li>Cindi Aprilia Puluhulawa</li>
+                  <li>Cencen Lahay</li>
+              </ul>
+          </div>
+  
+          <div class="footer-contact">
+              <h3>Hubungi Kami</h3>
+              <p>✉️ muhamad_4trpl@</p>
+              <p>📱 08 87 87 8787</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <div class="social-media">
+              <a href="#"><img src="img/facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+              <a href="#"><img src="img/youtube.png" alt="YouTube"></a>
+          </div>
+          <p>Copyright © Kelompok 4 TRPL.</p>
+      </div>
+  </footer>  
+  </body>
+</html>

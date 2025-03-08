@@ -1,0 +1,436 @@
+* {
+  text-decoration: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.wrapper {
+  width: 1100px;
+  margin: auto;
+  position: relative;
+}
+
+.wrapper_a {
+  width: 1390px;
+  margin: auto;
+  padding: 10px;
+}
+.logo img {
+
+  float: left;
+  width: 250px;
+  height: 80px;
+}
+
+.menu {
+  float: right;
+}
+
+nav {
+  width: 100%;
+  margin: auto;
+  display: flex;
+  line-height: 80px;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+  z-index: 1;
+  background-color: yellow;
+  border-bottom: 1px solid #ffff;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+
+nav .menu a:hover {
+  text-decoration: underline;
+  color: #33cc33;
+}
+
+nav ul li a1 {
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+/* hero sacetion */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  background-image: url('../home2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.hero::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(1,1,3,1)3%, rgba(255,255,255,0)25%);
+}
+
+.hero .content{
+  padding: 1.2rem 7%;
+  max-width: 45rem;
+}
+
+h2 {
+  font-family: "comic sans ms";
+  font-weight: 800;
+  font-size: 45px;
+  margin-bottom: 20px;
+  color: #333;
+  width: 100%;
+  line-height: 50px;
+}
+
+p {
+  margin: 10px 0px 10px 0px;
+  padding: 10px 0px 10px 0px;
+}
+
+.tengah {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.materi-list {
+  width: 1410px;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kolomm p{
+  font-size: 22px;
+}
+
+.kolomm h2{
+  font-size: 65px;
+}
+.materi-python {
+  width: 20%;
+  margin: 0 auto;
+}
+
+.materi-python img {
+  width: 100%;
+  border-radius: 55%;
+}
+
+/* Wrapper and Container Styles */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wrapper_a {
+  padding: 20px 0;
+}
+
+.tengah {
+  text-align: center;
+  padding: 40px 0;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: rgba(1, 1, 1, 0.8);
+  padding: 10px 0;
+  border-bottom: 3px solid #28a745;
+}
+
+nav .logo a {
+  color: white;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+nav .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav .menu ul li {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+nav .menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+nav .menu ul li a.tbl-biru {
+  background-color: #28a745;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+#home img,
+#tentang\ kami img,
+#materi img {
+  max-width: 100%;
+  height: auto;
+}
+
+#home .kolom,
+#tentang\ kami .kolom,
+#materi .kolom {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+#home h2,
+#tentang\ kami h2,
+#materi h2 {
+  margin-top: 0;
+}
+
+/* Materi List Styles */
+.materi-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.materi-python {
+  flex: 1 1 calc(25% - 40px);
+  box-sizing: border-box;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.materi-python img {
+  width: 350px;
+  height: 100px;
+  border-radius: 8px;
+}
+
+.materi-python P {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 30px;
+}
+
+.materi-python .tbl-belajar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.materi-python .tbl-belajar:hover {
+  background-color: #e73370;
+}
+
+.quis-container {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Warna latar belakang */
+  text-align: center; /* Pusatkan teks */
+}
+
+.quis-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.quis-container p {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.tbl-quis {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff; /* Warna latar belakang tombol */
+  color: white; /* Warna teks tombol */
+  text-decoration: none; /* Hilangkan garis bawah */
+  border-radius: 5px; /* Sudut membulat */
+}
+
+.tbl-quis:hover {
+  background-color: #0056b3; /* Warna latar belakang saat hover */
+}
+
+.footer {
+  background-color: #003d99;
+  color: #ffffff;
+  padding: 20px 100px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  max-width: 250px;
+  width: 200px;
+  padding-left: 50px;
+}
+
+.footer-logo .logo {
+  width: 320px;
+}
+
+.footer-section,
+.footer-contact,
+.footer-download {
+  max-width: 200px;
+  margin-top: 20px;
+}
+
+.footer-section h3,
+.footer-contact h3,
+.footer-download h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.footer-section ul,
+.footer-contact ul,
+.footer-download ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li,
+.footer-contact p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.footer-contact p,
+.footer-download img {
+  display: block;
+}
+
+.footer-download a {
+  display: inline-block;
+  margin: 5px 0;
+}
+
+.footer-download img {
+  width: 120px;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-media img {
+  width: 24px;
+  height: 24px;
+}
+
+.footer-bottom p {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.available {
+  background-color: #00cc99;
+  color: #ffffff;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.available:hover {
+  background-color: #00b38f;
+}
+.social-media a:hover img {
+  filter: brightness(0.8);
+  transform: scale(1.2);
+}
+
+.footer-section ul li:hover {
+  color: #00ccff;
+  cursor: pointer;
+}
+.footer-contact p:hover {
+  color: #00ccff;
+  cursor: pointer;
+}
+
+/* Style untuk tampilan utama */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.materi-list .materi-python .tbl-belajar {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
