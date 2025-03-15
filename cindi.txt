@@ -1,0 +1,35 @@
+import random
+
+def fitness(board):
+    """Menghitung jumlah pasangan ratu yang saling menyerang."""
+    attacks = 0
+    n = len(board)
+    for i in range(n):
+        for j in range(i + 1, n):
+            if board[i] == board[j] or abs(board[i] - board[j]) == abs(i - j):
+                attacks += 1
+    return attacks
+
+def get_neighbors(board):
+    """Menghasilkan semua kemungkinan perpindahan satu langkah untuk satu ratu."""
+    n = len(board)
+    neighbors = []
+    for col in range(n):
+        for row in range(n):
+            if board[col] != row:  
+                new_board = list(board)
+                new_board[col] = row
+                neighbors.append(new_board)
+    return neighbors
+
+def hill_climb(n=8):
+    """Menyelesaikan 8-Queens dengan Hill Climbing."""
+    board = [random.randint(0, n - 1) for _ in range(n)]
+    while True:
+        neighbors = get_neighbors(board)
+        best_neighbor = min(neighbors, key=fitness)
+        
+        if fitness(best_neighbor) >= fitness(board):
+            return board  # Tidak ada perbaikan, berhenti
+        
+        board = best_neighbor  
